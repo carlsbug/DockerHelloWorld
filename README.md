@@ -10,4 +10,13 @@ $ touch Dockerfile // Dockerfile is the example name for the Dockerfile
 $ docker pull ubuntu:18.04 
 $ docker pull gcc
 
-Pulling those images into Dockerfile and run the C file 
+4. Pulling those images into Dockerfile and run the C file 
+& nano Dockerfile // to modify the Dockerfile, control+x to EXIT
+
+5. Create an image with a dockerfile 
+$ docker build -t helloworld_c . // make sure you are in the right directory
+
+6. Run...
+$ docker run -it helloworld_c
+
+
