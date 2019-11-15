@@ -1,5 +1,3 @@
-# Run gameroom.c
-
 #Download base image ubuntu 18.04
 #FROM: Define the base image and start the build process
 FROM ubuntu:18.04
@@ -12,7 +10,5 @@ COPY . /usr/src/
 RUN apt-get update
    # rm -rf /var/lib/apt/lists/*
 
-#RUN gcc ./helloWorld.c -o helloDocker
-
-RUN gcc -o helloworld ./helloWorld.c -pthread
-CMD ["./helloworld"]
+RUN gcc ./helloWorld.c -o helloDocker
+CMD ["./helloDocker"] #this is for just to run helloworld
